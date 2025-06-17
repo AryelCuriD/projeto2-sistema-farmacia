@@ -25,7 +25,7 @@
 }
 
 .bodyEscuro .btnExcluir {
-    color: #d57ed7; /* tom lilás claro para contraste */
+    color: #d57ed7;
 }
 
 .bodyEscuro .btnExcluir:hover {
@@ -175,19 +175,19 @@
     border-bottom-right-radius: 1vh;
 
     display: flex;
-    align-items: center;              /* centraliza verticalmente o conteúdo */
-    justify-content: space-between;   /* espaço entre texto à esquerda e contador à direita */
+    align-items: center;              
+    justify-content: space-between;  
     box-sizing: border-box;
 }
 
-/* Agrupamento dos textos CLIENTES e CADASTRADOS */
+
 .dashboardTexts {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-/* Texto CLIENTES */
+
 .dashboardPrimeiro {
     font-family: 'Segoe UI';
     font-weight: 500;
@@ -196,7 +196,7 @@
     margin: 0;
 }
 
-/* Texto CADASTRADOS */
+
 .dashboardSegundo {
     font-family: 'Segoe UI';
     font-weight: 400;
@@ -205,7 +205,7 @@
     margin: 0;
 }
 
-/* Contador alinhado à direita e verticalmente centralizado */
+
 .dashboardContador {
     font-family: 'Segoe UI';
     font-weight: 400;
@@ -214,14 +214,14 @@
     margin: 0;
 }
 
-/* Remover posicionamentos absolutos e relativos nos títulos para evitar conflito */
+
 #clientes, #cadastrados, #contadorClientes {
     position: static;
     top: auto;
     left: auto;
 }
 
-/* Responsividade básica */
+
 @media (max-width: 1280px) {
     #clientesCadastrados {
         width: 50vh;
@@ -229,7 +229,7 @@
         padding: 1vw 1.5vw;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between; /* igual ao estoque para separar texto e contador */
+        justify-content: space-between;
     }
     .dashboardPrimeiro {
         font-size: 40px;
