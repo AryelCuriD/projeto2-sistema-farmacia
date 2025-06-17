@@ -88,7 +88,7 @@ function toggleFormulario() {
        }
 
        const clientes = obterClientes();
-       const novoCliente = { id: clientes.length + 1, nome, email, telefone, idade }; // Adicionando um ID
+       const novoCliente = { id: clientes.length + 1, nome, email, telefone, idade };
        clientes.push(novoCliente);
        salvarClientes(clientes);
 

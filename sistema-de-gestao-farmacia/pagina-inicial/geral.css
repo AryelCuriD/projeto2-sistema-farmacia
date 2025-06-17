@@ -15,11 +15,11 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color: #1c2526; /* Fundo escuro */
-    color: #ffffff; /* Texto claro */
+    background-color: #1c2526; 
+    color: #ffffff;
 }
 
-/* Ajustes para elementos no modo escuro, exceto cabeçalho e menu */
+
 .bodyEscuro .saudacaoEmpresa {
     color: #ffffff;
     transition: all 0.6s ease-in-out;
@@ -167,7 +167,7 @@ h1 {
     position: fixed;
     height: 100%;
     width: 3vw;
-    background-color: #5D54A4; /* Roxo mantido em ambos os modos */
+    background-color: #5D54A4;
     color: white;
     z-index: 999;
     display: flex;
@@ -373,7 +373,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-left: 1.5vw; /* ajusta o afastamento da esquerda */
+  padding-left: 1.5vw; 
 }
 
 .dashboardPrimeiro,

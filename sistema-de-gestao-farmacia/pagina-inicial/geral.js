@@ -158,13 +158,13 @@ window.getSenhaUsuarioAtual = function() {
     return user ? user.senha : null;
 };
 
-// Evento para o modo escuro
+
 iconeModoEscuro.addEventListener('change', (e) => {
     body.classList.toggle('bodyEscuro');
-    localStorage.setItem('modoEscuro', body.classList.contains('bodyEscuro')); // Salvar estado
+    localStorage.setItem('modoEscuro', body.classList.contains('bodyEscuro'));
 });
 
-// Carregar estado do modo escuro
+
 document.addEventListener('DOMContentLoaded', () => {
     if (localStorage.getItem('modoEscuro') === 'true') {
         body.classList.add('bodyEscuro');
@@ -174,13 +174,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Modo escuro
+
     if (localStorage.getItem('modoEscuro') === 'true') {
         body.classList.add('bodyEscuro');
         iconeModoEscuro.checked = true;
     }
 
-    // Contadores da dashboard (clientes, produtos, vendas)
+
     if (window.location.pathname.includes('pagina-inicial.html')) {
         const contadorClientes = document.getElementById('contadorClientes');
         const contadorProdutos = document.getElementById('contadorProdutos');

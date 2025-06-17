@@ -1,6 +1,5 @@
 (() => {
 
-  // Variáveis - pegando elementos com os mesmos IDs
   const btnAdicionarVendaVendas = document.getElementById('btnAdicionarVenda');
   const formVendaVendas = document.getElementById('formVenda');
   const selectProdutoVendas = document.getElementById('selectProduto');

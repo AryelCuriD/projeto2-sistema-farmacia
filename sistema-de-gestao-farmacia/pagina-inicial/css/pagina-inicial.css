@@ -19,7 +19,7 @@
   transform: translateX(-50%);
 }
 
-/* CARD (caixaInfo) */
+
 .caixaInfo {
   width: 100%;
   height: 15vh;
@@ -41,14 +41,14 @@
   cursor: pointer;
 }
 
-/* TEXTOS INTERNOS */
+
 .info-texto {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-/* Títulos */
+
 .dashboardPrimeiro {
   font-family: 'Segoe UI';
   font-weight: 500;
@@ -65,7 +65,7 @@
   margin: 0;
 }
 
-/* CONTADORES */
+
 .dashboardContador,
 #contadorProdutos,
 #contadorClientes,
@@ -80,7 +80,7 @@
   font-size: 50px;
 }
 
-/* RESPONSIVO PARA TABLETS */
+
 @media (max-width: 1024px) {
   .dashboardPrimeiro,
   .dashboardSegundo {
@@ -104,7 +104,7 @@
   }
 }
 
-/* RESPONSIVO PARA CELULARES */
+
 @media (max-width: 768px) {
   .dashboardPrimeiro,
   .dashboardSegundo {

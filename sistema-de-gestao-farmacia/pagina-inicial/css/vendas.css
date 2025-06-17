@@ -159,7 +159,7 @@
     color: darkred;
 }
 
-/* Dashboard Vendas */
+
 #vendasRealizadas {
     position: absolute;
     top: 5%;
@@ -171,8 +171,8 @@
     border-bottom-right-radius: 1vh;
     
     display: flex;
-    align-items: center;            /* centraliza verticalmente */
-    justify-content: space-between; /* espaça o texto e o contador */
+    align-items: center;          
+    justify-content: space-between;
     box-sizing: border-box;
     color: white;
     font-family: 'Segoe UI';
@@ -190,34 +190,34 @@
 
 .dashboardPrimeiro {
     font-weight: 500;
-    font-size: 40px;  /* igual ao produtos */
+    font-size: 40px; 
     margin: 0;
 }
 
 
 .dashboardSegundo {
     font-weight: 400;
-    font-size: 30px;  /* igual ao produtos */
+    font-size: 30px; 
     margin: 0;
     margin-top: 5px;
 }
 
 .dashboardContador {
     font-weight: 400;
-    font-size: 50px;  /* igual ao produtos */
+    font-size: 50px;  
     margin: 0;
     white-space: nowrap;
-    position: static;  /* para respeitar o flexbox */
+    position: static;  
     align-self: center;
 }
 
-/* Responsividade */
+
 @media (max-width: 1280px) {
     #vendasRealizadas {
-        width: 50vh;      /* Igual ao clientes/produtos */
-        height: auto;     /* Igual ao clientes/produtos */
+        width: 50vh;    
+        height: auto;     
         padding: 1vw 1.5vw;
-        flex-direction: row;  /* Para manter alinhamento lado a lado */
+        flex-direction: row;
         align-items: center;
         justify-content: space-between;
     }
