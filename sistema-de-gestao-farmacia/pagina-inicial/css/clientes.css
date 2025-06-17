@@ -175,8 +175,13 @@
     border-bottom-right-radius: 1vh;
 
     display: flex;
+<<<<<<< HEAD
     align-items: center;         
     justify-content: space-between;
+=======
+    align-items: center;              
+    justify-content: space-between;  
+>>>>>>> 2a066f604728480bbdcd13b664c66814399f3e28
     box-sizing: border-box;
 }
 
