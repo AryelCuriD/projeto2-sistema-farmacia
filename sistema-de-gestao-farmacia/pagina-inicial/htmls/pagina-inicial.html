@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>SG TOKEN</title>
+        <link rel="stylesheet" type="text/css" href="../geral.css">
+        <link rel="stylesheet" type="text/css" href="../css/pagina-inicial.css">
+    </head>
+    <body>     
+        <header class="cabecalho">
+            <img src="../images/ícone da farmáciaaa.png" id="logoFarmacia" alt="ícone da farmácia">
+            <h3 class="saudacaoEmpresa">Olá! Thales Bellé</h3>
+            <div class="container-usuario">
+                <img src="../images/ícone usuário.png" id="usuario" style="cursor: pointer;">
+                <div id="menuUsuario" class="menu-usuario oculto">
+                    <ul>
+                        <li onclick="mostrarPerfil()">Perfil</li>
+                        <li onclick="confirmarSaida()">Sair da conta</li>
+                    </ul>
+                    <div id="perfilInfo" class="perfil-info oculto">
+                        <p><strong>Username:</strong> <span id="perfilUsername"></span></p>
+                        <p><strong>Email:</strong> <span id="perfilEmail"></span></p>
+                        <p><strong>Senha:</strong> <span id="perfilSenha">****</span></p>
+                        <p><strong>Cargo:</strong> <span id="perfilCargo"></span></p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="menu">
+            <div class="menu-item"  onclick="window.location.href='./pagina-inicial.html';">
+                <img src="../images/Icone de Menu.png" id="iconeGeral" class="icones">
+                <span class="menu-text">GERAL</span>
+            </div>
+            <div class="menu-item" onclick="window.location.href='./clientes.html';" >
+                <img src="../images/Icone de Cliente.png" id="iconeCliente" class="icones">
+                <span class="menu-text">CLIENTES</span>
+            </div>
+            <div class="menu-item"  onclick="window.location.href='./estoque.html';">
+                <img src="../images/Icone de Estoque.png" id="iconeEstoque" class="icones">
+                <span class="menu-text">ESTOQUE</span>
+            </div>
+            <div class="menu-item" onclick="window.location.href='./vendas.html';">
+                <img src="../images/Icone de Venda.png"  id="iconeVendas" class="icones">
+                <span class="menu-text">VENDAS</span>
+            </div>
+            <div class="menu-item" id="iconeEscuro">
+                <label class="ui-switch" id="iconeModoEscuro">
+                    <input type="checkbox">
+                    <div class="slider">
+                    <div class="circle"></div>
+                    </div>
+                </label>     
+            </div>
+            <div class="menu-item">
+                <img src="../images/Seta de Menu.png" id="iconeMenu" class="icones">
+            </div>
+        </section>
+
+       <section id="dashboardGeral">
+  <h1 class="tituloPagina"> DASHBOARD</h1>
+
+  <div class="caixaInfo" id="clientesGeral" onclick="window.location.href='./clientes.html';">
+    <div class="info-texto">
+      <h1 class="dashboardPrimeiro">CLIENTES</h1>
+      <h1 class="dashboardSegundo">CADASTRADOS</h1>
+    </div>
+    <span id="contadorClientes" class="dashboardContador">0</span>
+  </div>
+
+  <div class="caixaInfo" id="produtosCadastrados" onclick="window.location.href='./estoque.html';">
+    <div class="info-texto">
+      <h1 class="dashboardPrimeiro">PRODUTOS</h1>
+      <h1 class="dashboardSegundo">CADASTRADOS</h1>
+    </div>
+    <span id="contadorProdutos" class="dashboardContador">0</span>
+  </div>
+
+  <div class="caixaInfo" id="vendasGeral" onclick="window.location.href='./vendas.html';">
+    <div class="info-texto">
+      <h1 class="dashboardPrimeiro">TOTAL</h1>
+      <h1 class="dashboardSegundo">VENDAS</h1>
+    </div>
+    <span id="contadorVendas" class="dashboardContador">0</span>
+  </div>
+</section>
+
+
+        <div id="authDialog" class="auth-dialog oculto">
+            <div class="auth-dialog-content">
+                <p id="authMessage"></p>
+                <input type="text" id="authInput" class="auth-input" placeholder="Digite aqui">
+                <div class="auth-buttons">
+                    <button id="authSubmit">Confirmar</button>
+                    <button id="authCancel">Cancelar</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="../geral.js"></script>
+        <script src="../js/clientes.js"></script>
+        <script src="../js/estoque.js"></script>
+        <script src="../js/vendas.js"></script>
+    </body>
+</html>
